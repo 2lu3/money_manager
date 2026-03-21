@@ -1,0 +1,73 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+resolution-markers = [
+    "python_full_version >= '3.14'",
+    "python_full_version < '3.14'",
+]
+
+[[package]]
+name = "backend"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "turboapi", version = "0.5.22", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.14'" },
+    { name = "turboapi", version = "1.0.17", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.14'" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "turboapi", specifier = ">=0.5.22" }]
+
+[[package]]
+name = "dhi"
+version = "1.1.21"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/6b/8c/4cdeaba3140e6b2491f4904c3ea07e90805967c24bbc0c400489289a406c/dhi-1.1.21.tar.gz", hash = "sha256:390c2e234fca6bd0846264fa2f1af479ec948975831d4fa2224138af2c16f360", size = 142341, upload-time = "2026-02-08T06:59:01.9Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b6/61/91ad5a9df5c50b096d3b2a77dcc2a63a37b3df70e879844b54593c5055fd/dhi-1.1.21-py3-none-any.whl", hash = "sha256:e21feff4996a04c260f1ef083168c7027748a54a45ec43e49b33f7fae57ff4d1", size = 133119, upload-time = "2026-02-08T06:58:59.975Z" },
+]
+
+[[package]]
+name = "turboapi"
+version = "0.5.22"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version < '3.14'",
+]
+dependencies = [
+    { name = "dhi", marker = "python_full_version < '3.14'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f7/25/a18ab80da8461e7bbff633d2b1f982168d13c32377d23065f16f32bcc207/turboapi-0.5.22.tar.gz", hash = "sha256:40d0d22bd302df4a50c5a7f6b6b44e08f5dc6afeb27325255b114196cebb6eba", size = 2512494, upload-time = "2026-02-03T11:45:59.739Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c3/c6/1d57f65ffd81d4017c14f1ffb73a89c8a339b5a9f416374b13c66a0c1b2d/turboapi-0.5.22-cp313-cp313-macosx_10_12_x86_64.whl", hash = "sha256:44779244907f2217025fb037d43fdc0fde677414611e3527431966c66e614b20", size = 2417090, upload-time = "2026-02-03T11:48:29.233Z" },
+    { url = "https://files.pythonhosted.org/packages/db/82/06367ac3bb046d01a066a06d98bdafd015405ec079092b6099cb496854a1/turboapi-0.5.22-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:7446011e78c41a65c52c4256502d9c5a1427cfd71ae0c009ba75e48066dd0eb6", size = 2331804, upload-time = "2026-02-03T11:48:30.578Z" },
+    { url = "https://files.pythonhosted.org/packages/9e/43/b047471cf4f0e38b3dfd9984e39cac093e63ad95a47605a14fbe2c6620d9/turboapi-0.5.22-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8d9d0079fbedd98d5adbc63ced0e5f5eea04259ffc2d0c5c7d20a4c835d23c58", size = 2593826, upload-time = "2026-02-03T11:48:31.755Z" },
+    { url = "https://files.pythonhosted.org/packages/95/0f/0094c3581e187758313b725f1dbad87fd5d6cf2ba5dabb56914eb92c239a/turboapi-0.5.22-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d85b805b85a3d1fa096b94b2ec50fa242cf2c8dbf6daf5fd24c0838b7bfe2245", size = 2610336, upload-time = "2026-02-03T11:48:33.536Z" },
+    { url = "https://files.pythonhosted.org/packages/7f/47/02dcf5a4ea5556986a463f7c48a9e55c880eab6cab6cdb258f98649cf14f/turboapi-0.5.22-cp313-cp313-win_amd64.whl", hash = "sha256:ee2fe86fd66a71f72e7e46b2cb095fcfad7744d780510fc96c1d0be0cd5d7b37", size = 2149231, upload-time = "2026-02-03T11:48:34.62Z" },
+    { url = "https://files.pythonhosted.org/packages/ae/8f/b52f3b3aee55df83a5443b8fe4f2414b22a8ce44e5f1b2a4cf5e30fedbce/turboapi-0.5.22-cp314-cp314-macosx_10_12_x86_64.whl", hash = "sha256:c68198480fe2c6f61c9a1b56413cb0cf9f2e5a1abb5c4776c461eca68c7c7ef4", size = 2417232, upload-time = "2026-02-03T11:48:36.256Z" },
+    { url = "https://files.pythonhosted.org/packages/a5/ce/411495a8d5f1ba8c54c21f5701b499ce29bca9d0479ce7f408197ec2e0e9/turboapi-0.5.22-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:4f2de34a0a83c92ac948c46bc6891589e1330c61fad591505ae19955fc5e1286", size = 2332055, upload-time = "2026-02-03T11:48:37.448Z" },
+    { url = "https://files.pythonhosted.org/packages/64/86/67099c46bbf171a26afe56aad397c9cd56b2b14d7ab37211a2c0319e34c9/turboapi-0.5.22-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:287b50521b98e9f0c0e6a01d467bf14830d6b0647742844741b62f96c8de212e", size = 2594049, upload-time = "2026-02-03T11:48:39.071Z" },
+    { url = "https://files.pythonhosted.org/packages/de/42/7257ec0bca3f84dc07b7f8fa9d3d0fce766c87f55d025b35bce91d76f665/turboapi-0.5.22-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1e68e869935db9165a94228ff76307d9b4bef3199e20821838092cf83922ebf2", size = 2614460, upload-time = "2026-02-03T11:48:40.298Z" },
+    { url = "https://files.pythonhosted.org/packages/08/1e/6c77de104f6ec3af0ca1fd44ea66d47d214160eb70df286a756a50784b74/turboapi-0.5.22-cp314-cp314-win_amd64.whl", hash = "sha256:1d6699a5501891ab8bc3db77602e1c404cf56e72900315ace50f29a033e43065", size = 2146830, upload-time = "2026-02-03T11:48:41.969Z" },
+    { url = "https://files.pythonhosted.org/packages/68/0f/68284a5b28f520ceee39e6ba2ad0f9cbf6e93fbdae27fcc3cef0a4796fb9/turboapi-0.5.22-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:757ef36ca1f3e71075dc92db26ffbc15c42f83264d6f3c29b54e84cda0d3fae4", size = 1980628, upload-time = "2026-02-03T11:45:55.358Z" },
+]
+
+[[package]]
+name = "turboapi"
+version = "1.0.17"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version >= '3.14'",
+]
+dependencies = [
+    { name = "dhi", marker = "python_full_version >= '3.14'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/75/b4/54efa3c2857123207b5e710a7e6f1f33937d0f0f0c204aad8bf937bea70c/turboapi-1.0.17.tar.gz", hash = "sha256:baf3350d7c36934c85da68a44f1c7ed3ec1334dc459c07f05dc89c84f0842fd5", size = 126730, upload-time = "2026-03-21T02:34:35.318Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b0/2a/ceaf22ed9d998ccdd4458b91b9963da124b23a6d6c55ef14bdeee4b9ee20/turboapi-1.0.17-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:56bc63b29c8781b2106dd5536f3f9846c4f04d9b5b448eb9e18748124ad5e3c3", size = 339864, upload-time = "2026-03-21T02:34:27.993Z" },
+    { url = "https://files.pythonhosted.org/packages/05/18/8258292a1e4c224449e0befa9ad19dea93be15387da930b676e40ad8ab5b/turboapi-1.0.17-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:703d9b1f3f9645a98ba44bd42d220ed3fa27d5ca0ee13a1a2bfb0512abfabea0", size = 1244185, upload-time = "2026-03-21T02:34:29.309Z" },
+    { url = "https://files.pythonhosted.org/packages/f9/2b/ec3884e6699a542fa611ba8effb4c5d90dc98756b696e901314d7326e262/turboapi-1.0.17-cp314-cp314-macosx_10_15_universal2.whl", hash = "sha256:7a845dfc3e092c2e6468a5479ff2b1f5be671b6c0abd57283df16034e4404f0a", size = 339978, upload-time = "2026-03-21T02:34:30.47Z" },
+    { url = "https://files.pythonhosted.org/packages/33/b1/083f5787aea995b296272baa305560edb4aba8a350d218a58d7bed59f578/turboapi-1.0.17-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:82c5be05c7842041c47e13e8401820ccc89c77cee9c36a1dd40ddc52e2d4b793", size = 1244092, upload-time = "2026-03-21T02:34:31.586Z" },
+    { url = "https://files.pythonhosted.org/packages/8d/5b/efc9e65e56dcaece5e894b8bc4f198de244916cb7d2cb7ed44869e1d8c27/turboapi-1.0.17-cp314t-cp314t-macosx_10_15_universal2.whl", hash = "sha256:cd742f418a194a69cd3c7b08b52441cc0b70cffac70fd207d0942498cce41168", size = 339816, upload-time = "2026-03-21T02:34:32.72Z" },
+    { url = "https://files.pythonhosted.org/packages/d5/e7/dddec84e9eac79de3453677326e4c6251d3460c1144d52315e38ea20277e/turboapi-1.0.17-cp314t-cp314t-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:cf7b9066f8ef61060831876d83f382a89c6bf858fe691f554e3c2ca8043681ef", size = 1245092, upload-time = "2026-03-21T02:34:34.103Z" },
+]
