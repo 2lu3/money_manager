@@ -13,6 +13,11 @@ class Settings(BaseSettings):
     resend_webhook_secret: str | None = None
     resend_api_key: str | None = None
 
+    supabase_user: str | None = None
+    supabase_password: str | None = None
+    supabase_database: str | None = None
+    supabase_host: str | None = None
+    supabase_port: int | None = None
 
 @lru_cache
 def get_settings() -> Settings:
